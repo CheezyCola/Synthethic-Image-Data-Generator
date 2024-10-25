@@ -4,4 +4,7 @@ The objectives the work are as follows:
 3. To Developing an intuitive graphical user interface (GUI) to facilitate swift and straightforward control of the generation pipeline.
 
 Program code located in path: Synthethic-Image-Data-Generator/DataGenerator/
-Entrance of the program: DataGenerator/app/Main_Window.py
+
+Entrance of the program: Synthethic-Image-Data-Generator/DataGenerator/app/Main_Window.py
+
+Examples of generated items at: Synthethic-Image-Data-Generator/Dataset/Dataset_1/
