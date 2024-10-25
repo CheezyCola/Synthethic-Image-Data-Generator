@@ -1,0 +1,6 @@
+blenderproc==2.6.1
+pandas==1.3.5
+scikit-learn==1.0.2
+albumentations==1.3.1 -install-option='--no-binary qudida,albumentations'
+pycocotools==2.0.7
+PySide2==5.15.2.1

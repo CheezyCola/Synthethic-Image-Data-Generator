@@ -1,0 +1,3091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1084</width>
+    <height>1335</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1095</width>
+      <height>1271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="main_layout" stretch="0,1,10,0,0,0">
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="WindowTitle">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Data Generator</string>
+       </property>
+       <property name="margin">
+        <number>3</number>
+       </property>
+       <property name="indent">
+        <number>3</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="gBox_IO">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>Input/Output</string>
+       </property>
+       <widget class="QWidget" name="gridLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>951</width>
+          <height>148</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_IO" rowstretch="0,0,0,0" columnstretch="0,4,0,0,3" rowminimumheight="0,0,0,0" columnminimumwidth="0,0,0,0,0">
+         <property name="leftMargin">
+          <number>25</number>
+         </property>
+         <property name="topMargin">
+          <number>5</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lbl_gnd_dir">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Ground directory</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="line_output_dir">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="line_config_file">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLabel" name="lbl_isNewFolder">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(0, 0, 255)</string>
+           </property>
+           <property name="text">
+            <string>Create New Folder</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="line_obj_dir">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QPushButton" name="pB_search_output_dir">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>search</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="lbl_obj_dir">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Object directory</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lbl_output_dir">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Output directory</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="pB_search_obj_dir">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>search</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="line_gnd_dir">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lbl_config_file">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Config file</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="pB_search_gnd_dir">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>search</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="pB_search_config_file">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>search</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <spacer name="horizontalSpacer_23">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="lbl_Config">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <underline>false</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Configuration</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
+         </property>
+         <property name="indent">
+          <number>5</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="currentIndex">
+          <number>6</number>
+         </property>
+         <widget class="QWidget" name="tab_Setting">
+          <attribute name="title">
+           <string>Setting</string>
+          </attribute>
+          <widget class="QWidget" name="gridLayoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>961</width>
+             <height>701</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_Setting" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1" columnstretch="0,0,1,2,7">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item row="8" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Renderer</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLineEdit" name="line_gravity"/>
+            </item>
+            <item row="19" column="0">
+             <widget class="QLabel" name="label_57">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>File</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="lbl_unit">
+              <property name="text">
+               <string>Unit</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>Gravity (m/s2)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>World</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <widget class="QLabel" name="label_29">
+              <property name="text">
+               <string>Image Compression (%)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="16" column="1">
+             <widget class="QLabel" name="label_32">
+              <property name="text">
+               <string>Use Only CPU</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QLineEdit" name="line_3DviewClipEnd"/>
+            </item>
+            <item row="15" column="2">
+             <widget class="QDoubleSpinBox" name="sBox_noiseTreshold">
+              <property name="minimum">
+               <double>0.010000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.010000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="13" column="1">
+             <widget class="QLabel" name="label_27">
+              <property name="text">
+               <string>Number of Subdivision</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QLineEdit" name="line_3DviewClipStart"/>
+            </item>
+            <item row="14" column="2">
+             <widget class="QComboBox" name="comboBox_denoiser">
+              <item>
+               <property name="text">
+                <string>INTEL</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>OPTIX</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>NONE</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLabel" name="label_26">
+              <property name="text">
+               <string>3D View Clip End</string>
+              </property>
+             </widget>
+            </item>
+            <item row="16" column="2">
+             <widget class="QCheckBox" name="cBox_useOnlyCPU">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="22" column="0">
+             <spacer name="verticalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="20" column="1">
+             <widget class="QLabel" name="label_58">
+              <property name="text">
+               <string>CC Textures Directory</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="2">
+             <widget class="QLineEdit" name="line_engine">
+              <property name="text">
+               <string>CYCLES</string>
+              </property>
+             </widget>
+            </item>
+            <item row="15" column="1">
+             <widget class="QLabel" name="label_31">
+              <property name="text">
+               <string>Noise Treshold</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="2">
+             <widget class="QCheckBox" name="cBox_ambientOcclusion">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="1">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>CPU Cores Count</string>
+              </property>
+             </widget>
+            </item>
+            <item row="18" column="0">
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="17" column="2">
+             <widget class="QComboBox" name="comboBox_GPUType">
+              <item>
+               <property name="text">
+                <string>CUDA</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>OPTIX</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>HIP</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>Ambient Occlusion</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="4">
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="12" column="2">
+             <widget class="QSpinBox" name="sBox_CPUCoresNum">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>3D View Clip Start</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QCheckBox" name="cBox_backgroundBlack">
+              <property name="text">
+               <string>Pitch black</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QComboBox" name="comboBox_unit">
+              <item>
+               <property name="text">
+                <string>mm</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>cm</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>m</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="17" column="1">
+             <widget class="QLabel" name="label_33">
+              <property name="text">
+               <string>GPU Device Type</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="QLabel" name="label_28">
+              <property name="text">
+               <string>Engine</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>Background</string>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="1">
+             <widget class="QLabel" name="label_30">
+              <property name="text">
+               <string>Denoiser</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>200</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="2">
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="21" column="1">
+             <widget class="QLabel" name="label_87">
+              <property name="text">
+               <string>COCO Annotated Image</string>
+              </property>
+             </widget>
+            </item>
+            <item row="21" column="2">
+             <widget class="QCheckBox" name="cBox_saveCocoAnnotatedImage">
+              <property name="text">
+               <string>Save</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="2">
+             <widget class="QDoubleSpinBox" name="sBox_imageCompression">
+              <property name="decimals">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <double>50.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>1.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="13" column="2">
+             <widget class="QSpinBox" name="sBox_numOfSubdivision">
+              <property name="minimum">
+               <number>3</number>
+              </property>
+              <property name="maximum">
+               <number>50</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_Objects">
+          <attribute name="title">
+           <string>Objects</string>
+          </attribute>
+          <widget class="QWidget" name="gridLayoutWidget_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>961</width>
+             <height>741</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_Objects" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" columnstretch="0,0,1,1,7">
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item row="1" column="1">
+             <widget class="QLabel" name="label_65">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Linear Damping</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="3">
+             <widget class="QCheckBox" name="cBox_obj_randomColor">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="3">
+             <widget class="QCheckBox" name="cBox_obj_keppLoadedMaterial">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="4">
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="2">
+             <widget class="QLabel" name="label_73">
+              <property name="text">
+               <string>Keep Loaded</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QLabel" name="label_74">
+              <property name="text">
+               <string>Random</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="line_obj_friction"/>
+            </item>
+            <item row="12" column="2">
+             <widget class="QLabel" name="label_68">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Mininum</string>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="3">
+             <widget class="QCheckBox" name="cBox_obj_sampling_adjust">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_13">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="14" column="2">
+             <widget class="QLabel" name="label_69">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Adjusted to Objects</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLineEdit" name="line_obj_linearDamping"/>
+            </item>
+            <item row="7" column="3">
+             <widget class="QLineEdit" name="line_obj_definedMaterial"/>
+            </item>
+            <item row="5" column="1">
+             <widget class="QLabel" name="label_67">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Material</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="13" column="3">
+             <widget class="QLineEdit" name="line_obj_maxHeight"/>
+            </item>
+            <item row="8" column="3">
+             <widget class="QCheckBox" name="cBox_obj_randomMaterial">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="13" column="2">
+             <widget class="QLabel" name="label_71">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Maximum</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="label_66">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Color</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLabel" name="label_76">
+              <property name="text">
+               <string>Random</string>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="3">
+             <widget class="QLineEdit" name="line_obj_minHeight"/>
+            </item>
+            <item row="16" column="1">
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="7" column="2">
+             <widget class="QLabel" name="label_72">
+              <property name="text">
+               <string>Defined</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="0">
+             <spacer name="verticalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLabel" name="label_63">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Sampler</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_64">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Friction</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_62">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Config</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="15" column="2">
+             <widget class="QLineEdit" name="line_obj_samplingRegion"/>
+            </item>
+            <item row="15" column="1">
+             <widget class="QLabel" name="label_70">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Sampling Region (%)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <widget class="QLabel" name="label_120">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Height</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_Distractor">
+          <attribute name="title">
+           <string>Distractor</string>
+          </attribute>
+          <widget class="QWidget" name="gridLayoutWidget_9">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>961</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_Distractor" columnstretch="0,1,1,1,7">
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <item row="4" column="1">
+             <widget class="QLabel" name="label_93">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Adjust to Objects</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="3">
+             <widget class="QLineEdit" name="line_distractor_minHeight"/>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLineEdit" name="line_distractor_definedSize"/>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_112">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Sampler</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="sBox_distractor_num"/>
+            </item>
+            <item row="10" column="4">
+             <spacer name="horizontalSpacer_22">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="0">
+             <spacer name="verticalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="label_94">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Defined [x,y,z]</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="3">
+             <widget class="QLineEdit" name="line_distractor_maxHeight"/>
+            </item>
+            <item row="5" column="0">
+             <spacer name="verticalSpacer_16">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="8" column="2">
+             <widget class="QLabel" name="label_108">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Minimum</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QCheckBox" name="cBox_distractor_adjustSize">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_21">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_91">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Size</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_109">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Number</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <spacer name="verticalSpacer_14">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="10" column="1">
+             <widget class="QLabel" name="label_92">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Sampling Region (%)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="2">
+             <widget class="QLineEdit" name="line_distractor_samplingRegion"/>
+            </item>
+            <item row="9" column="2">
+             <widget class="QLabel" name="label_107">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Maximum</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QLabel" name="label_121">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Height</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <spacer name="horizontalSpacer_26">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_Ground">
+          <attribute name="title">
+           <string>Ground</string>
+          </attribute>
+          <widget class="QWidget" name="gridLayoutWidget_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>961</width>
+             <height>491</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_Ground" rowstretch="0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0" columnstretch="0,1,1,0,0,1,7">
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_19">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>If no ground obj</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_117">
+              <property name="text">
+               <string>X</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLabel" name="label_77">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Plane XY</string>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="1">
+             <widget class="QLabel" name="label_79">
+              <property name="text">
+               <string>Keep Loaded</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="label_118">
+              <property name="text">
+               <string>Y</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_75">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Random Pick</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QLabel" name="label_81">
+              <property name="text">
+               <string>Adjusted to Objects</string>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="1">
+             <widget class="QLabel" name="label_85">
+              <property name="text">
+               <string>Random</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="0">
+             <widget class="QLabel" name="label_83">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Linear Damping</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="QLineEdit" name="line_gnd_friction"/>
+            </item>
+            <item row="15" column="1">
+             <spacer name="verticalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="9" column="1">
+             <widget class="QLineEdit" name="line_gnd_linearDamping"/>
+            </item>
+            <item row="0" column="5">
+             <spacer name="horizontalSpacer_14">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="13" column="1">
+             <widget class="QLabel" name="label_80">
+              <property name="text">
+               <string>Defined</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QCheckBox" name="cBox_gnd_randomPick">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="6">
+             <spacer name="horizontalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_113">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Euler Rotation</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="QLabel" name="label_78">
+              <property name="text">
+               <string>Defined [x,y]</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLabel" name="label_82">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Friction</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="0">
+             <widget class="QLabel" name="label_84">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Material</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="label_116">
+              <property name="text">
+               <string>Z</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="line_gnd_rotX"/>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLineEdit" name="line_gnd_rotY"/>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLineEdit" name="line_gnd_rotZ"/>
+            </item>
+            <item row="8" column="5">
+             <widget class="QCheckBox" name="cBox_gnd_XY_adjust">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_24">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="5" column="1">
+             <spacer name="horizontalSpacer_25">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="7" column="5">
+             <widget class="QLineEdit" name="line_gnd_definedXY"/>
+            </item>
+            <item row="12" column="2">
+             <widget class="QCheckBox" name="cBox_gnd_keepLoadedMaterial">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="13" column="2">
+             <widget class="QLineEdit" name="line_gnd_definedMaterial"/>
+            </item>
+            <item row="14" column="2">
+             <widget class="QCheckBox" name="cBox_gnd_randomMaterial">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_Camera">
+          <attribute name="title">
+           <string>Camera</string>
+          </attribute>
+          <widget class="QWidget" name="gridLayoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>961</width>
+             <height>671</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_Camera" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" columnstretch="0,0,1,1,1,7">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item row="4" column="2">
+             <widget class="QLineEdit" name="line_cam_clipEnd"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="label_13">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Image Width</string>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="3">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Max. radius</string>
+              </property>
+             </widget>
+            </item>
+            <item row="17" column="1">
+             <widget class="QLabel" name="label_52">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Rotation</string>
+              </property>
+             </widget>
+            </item>
+            <item row="15" column="3">
+             <widget class="QLabel" name="label_22">
+              <property name="text">
+               <string>Max. Elevation</string>
+              </property>
+             </widget>
+            </item>
+            <item row="19" column="1">
+             <widget class="QLabel" name="label_24">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Check</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QLabel" name="label_16">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Position</string>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="3">
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>Min. Elevation</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_86">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Sampler</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="3">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Min. radius</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_12">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Image Height</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="line_cam_imageHeight"/>
+            </item>
+            <item row="12" column="4">
+             <widget class="QLineEdit" name="line_cam_maxRadius"/>
+            </item>
+            <item row="14" column="4">
+             <widget class="QLineEdit" name="line_cam_minElevation"/>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="label_59">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Clip Start</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>Defined [x,y,z]</string>
+              </property>
+             </widget>
+            </item>
+            <item row="21" column="3">
+             <widget class="QCheckBox" name="cBox_cam_allObjectsFullyVisible">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_17">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="18" column="3">
+             <widget class="QCheckBox" name="cBox_cam_randomRotation">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <spacer name="horizontalSpacer_15">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="18" column="2">
+             <widget class="QLabel" name="label_61">
+              <property name="text">
+               <string>Random</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="lbl_camera_config">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Config</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="22" column="1">
+             <spacer name="verticalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="8" column="3">
+             <widget class="QLineEdit" name="line_cam_definedPos"/>
+            </item>
+            <item row="15" column="4">
+             <widget class="QLineEdit" name="line_cam_maxElevation"/>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="label_60">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Clip End</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <spacer name="verticalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="20" column="2">
+             <widget class="QLabel" name="label_25">
+              <property name="text">
+               <string>No Background</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="5">
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="20" column="3">
+             <widget class="QCheckBox" name="cBox_cam_noWorldBackground">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="3">
+             <widget class="QCheckBox" name="cBox_cam_randomPos">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="4">
+             <widget class="QLineEdit" name="line_cam_center"/>
+            </item>
+            <item row="3" column="4">
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLineEdit" name="line_cam_imageWidth"/>
+            </item>
+            <item row="21" column="2">
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>Objects Fully Visible</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLineEdit" name="line_cam_clipStart"/>
+            </item>
+            <item row="10" column="3">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Center</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="2">
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string>Random</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="4">
+             <widget class="QLineEdit" name="line_cam_minRadius"/>
+            </item>
+            <item row="13" column="3">
+             <widget class="QLabel" name="label_114">
+              <property name="text">
+               <string>Prefer Small Radius</string>
+              </property>
+             </widget>
+            </item>
+            <item row="13" column="4">
+             <widget class="QCheckBox" name="cBox_cam_preferSmallRadius">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_Light">
+          <attribute name="title">
+           <string>Light</string>
+          </attribute>
+          <widget class="QWidget" name="gridLayoutWidget_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>961</width>
+             <height>1031</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_Light" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" columnstretch="0,0,1,1,1,7">
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item row="20" column="2">
+             <widget class="QLabel" name="label_89">
+              <property name="text">
+               <string>Blend</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>Defined [x,y,z]</string>
+              </property>
+             </widget>
+            </item>
+            <item row="17" column="1">
+             <widget class="QLabel" name="label_98">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Number</string>
+              </property>
+             </widget>
+            </item>
+            <item row="16" column="0">
+             <widget class="QLabel" name="lbl_camera_sampler_2">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Spot Light</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="32" column="3">
+             <widget class="QLineEdit" name="line_spotLight_definedWatt"/>
+            </item>
+            <item row="27" column="4">
+             <widget class="QLineEdit" name="line_spotLight_minElevation"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="label_115">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Enabled</string>
+              </property>
+             </widget>
+            </item>
+            <item row="33" column="3">
+             <widget class="QCheckBox" name="cBox_spotLight_randomWatt">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="30" column="3">
+             <widget class="QCheckBox" name="cBox_spotlight_toObjects">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="13" column="3">
+             <widget class="QLineEdit" name="line_ceilLight_XY"/>
+            </item>
+            <item row="30" column="2">
+             <widget class="QLabel" name="label_97">
+              <property name="text">
+               <string>To Objects</string>
+              </property>
+             </widget>
+            </item>
+            <item row="26" column="3">
+             <widget class="QLabel" name="label_45">
+              <property name="text">
+               <string>Max. Radius</string>
+              </property>
+             </widget>
+            </item>
+            <item row="27" column="3">
+             <widget class="QLabel" name="label_21">
+              <property name="text">
+               <string>Min. Elevation</string>
+              </property>
+             </widget>
+            </item>
+            <item row="31" column="1">
+             <widget class="QLabel" name="label_23">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Watt</string>
+              </property>
+             </widget>
+            </item>
+            <item row="36" column="0">
+             <spacer name="verticalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="12" column="1">
+             <widget class="QLabel" name="label_40">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Plane XY</string>
+              </property>
+             </widget>
+            </item>
+            <item row="19" column="3">
+             <widget class="QLineEdit" name="line_spotLight_spreadAngle"/>
+            </item>
+            <item row="10" column="4">
+             <widget class="QLineEdit" name="line_ceilLight_minIntensity"/>
+            </item>
+            <item row="6" column="4">
+             <widget class="QLineEdit" name="line_ceilLight_maxHeight"/>
+            </item>
+            <item row="35" column="3">
+             <widget class="QLabel" name="label_47">
+              <property name="text">
+               <string>Max. Watt</string>
+              </property>
+             </widget>
+            </item>
+            <item row="25" column="3">
+             <widget class="QLabel" name="label_50">
+              <property name="text">
+               <string>Min. Radius</string>
+              </property>
+             </widget>
+            </item>
+            <item row="18" column="1">
+             <widget class="QLabel" name="label_88">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Config</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="3">
+             <widget class="QLabel" name="label_55">
+              <property name="text">
+               <string>Min. Intensity</string>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="3">
+             <widget class="QCheckBox" name="cBox_ceilLight_fitToGround">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QCheckBox" name="cBox_ceilLight_ENA">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="34" column="4">
+             <widget class="QLineEdit" name="line_spotLight_minWatt"/>
+            </item>
+            <item row="9" column="2">
+             <widget class="QLabel" name="label_36">
+              <property name="text">
+               <string>Random</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_20">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Position</string>
+              </property>
+             </widget>
+            </item>
+            <item row="17" column="2">
+             <widget class="QSpinBox" name="sBox_spotLight_num"/>
+            </item>
+            <item row="11" column="4">
+             <widget class="QLineEdit" name="line_ceilLight_maxIntensity"/>
+            </item>
+            <item row="3" column="3">
+             <widget class="QLineEdit" name="line_ceilLight_definedPos"/>
+            </item>
+            <item row="29" column="1">
+             <widget class="QLabel" name="label_95">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Rotation</string>
+              </property>
+             </widget>
+            </item>
+            <item row="19" column="2">
+             <widget class="QLabel" name="label_90">
+              <property name="text">
+               <string>Spread Angle (°)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="4">
+             <widget class="QLineEdit" name="line_ceilLight_minHeight"/>
+            </item>
+            <item row="9" column="3">
+             <widget class="QCheckBox" name="cBox_ceilLight_randomIntensity">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="21" column="1">
+             <widget class="QLabel" name="label_48">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Position</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="lbl_camera_config_2">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Ceiling Light</string>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="22" column="2">
+             <widget class="QLabel" name="label_49">
+              <property name="text">
+               <string>Defined [x,y,z]</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QLabel" name="label_37">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Intensity</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="3">
+             <widget class="QLineEdit" name="line_ceilLight_definedIntensity"/>
+            </item>
+            <item row="13" column="2">
+             <widget class="QLabel" name="label_41">
+              <property name="text">
+               <string>Defined [x,y]</string>
+              </property>
+             </widget>
+            </item>
+            <item row="28" column="3">
+             <widget class="QLabel" name="label_44">
+              <property name="text">
+               <string>Max. Elevation</string>
+              </property>
+             </widget>
+            </item>
+            <item row="32" column="2">
+             <widget class="QLabel" name="label_43">
+              <property name="text">
+               <string>Defined</string>
+              </property>
+             </widget>
+            </item>
+            <item row="20" column="3">
+             <widget class="QLineEdit" name="line_spotLight_blend"/>
+            </item>
+            <item row="34" column="3">
+             <widget class="QLabel" name="label_46">
+              <property name="text">
+               <string>Min. Watt</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="3">
+             <widget class="QLabel" name="label_56">
+              <property name="text">
+               <string>Max. Intensity</string>
+              </property>
+             </widget>
+            </item>
+            <item row="15" column="0">
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="28" column="4">
+             <widget class="QLineEdit" name="line_spotLight_maxElevation"/>
+            </item>
+            <item row="24" column="4">
+             <widget class="QLineEdit" name="line_spotLight_center"/>
+            </item>
+            <item row="25" column="4">
+             <widget class="QLineEdit" name="line_spotLight_minRadius"/>
+            </item>
+            <item row="14" column="2">
+             <widget class="QLabel" name="label_39">
+              <property name="text">
+               <string>Fit to Ground</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QLabel" name="label_38">
+              <property name="text">
+               <string>Defined</string>
+              </property>
+             </widget>
+            </item>
+            <item row="26" column="4">
+             <widget class="QLineEdit" name="line_spotLight_maxRadius"/>
+            </item>
+            <item row="24" column="3">
+             <widget class="QLabel" name="label_42">
+              <property name="text">
+               <string>Center</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="4">
+             <spacer name="horizontalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="22" column="3">
+             <widget class="QLineEdit" name="line_spotLight_definedPos"/>
+            </item>
+            <item row="23" column="3">
+             <widget class="QCheckBox" name="cBox_spotLight_randomPos">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="3">
+             <widget class="QLabel" name="label_53">
+              <property name="text">
+               <string>Min. Height</string>
+              </property>
+             </widget>
+            </item>
+            <item row="33" column="2">
+             <widget class="QLabel" name="label_54">
+              <property name="text">
+               <string>Random</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="3">
+             <widget class="QCheckBox" name="cBox_ceilLight_randomPos">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="23" column="2">
+             <widget class="QLabel" name="label_51">
+              <property name="text">
+               <string>Random</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLabel" name="label_34">
+              <property name="text">
+               <string>Random</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="3">
+             <widget class="QLabel" name="label_35">
+              <property name="text">
+               <string>Max. Height</string>
+              </property>
+             </widget>
+            </item>
+            <item row="35" column="4">
+             <widget class="QLineEdit" name="line_spotLight_maxWatt"/>
+            </item>
+            <item row="0" column="3">
+             <spacer name="horizontalSpacer_16">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="5" column="5">
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_Simulation">
+          <attribute name="title">
+           <string>Simulation</string>
+          </attribute>
+          <widget class="QWidget" name="gridLayoutWidget_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>961</width>
+             <height>411</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_Simulation" rowstretch="0,0,0,0,0,0,0,1" columnstretch="0,1,1,7">
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_99">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Substeps Per Frame</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_101">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Solver Iters</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_103">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Simulation Time</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_100">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Check Object Interval</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="3">
+             <spacer name="horizontalSpacer_20">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="line_simu_checkObjectInterval"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="line_simu_substepsPerFrame"/>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="line_simu_solverIters"/>
+            </item>
+            <item row="3" column="2">
+             <spacer name="horizontalSpacer_18">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="7" column="0">
+             <spacer name="verticalSpacer_13">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="7" column="1">
+             <spacer name="horizontalSpacer_19">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="label_102">
+              <property name="text">
+               <string>Mininum</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLineEdit" name="line_simu_minTime"/>
+            </item>
+            <item row="5" column="2">
+             <widget class="QLineEdit" name="line_simu_maxTime"/>
+            </item>
+            <item row="5" column="1">
+             <widget class="QLabel" name="label_105">
+              <property name="text">
+               <string>Maximum</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLabel" name="label_104">
+              <property name="text">
+               <string>Adjust to Objects</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QCheckBox" name="cBox_simu_adjustToObjects">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pB_loadConfig">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Load Configuration</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_saveConfig">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Save Configuration</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_applyConfig">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Apply Config</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,1">
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_106">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Min. Occurences of a Class per Image</string>
+           </property>
+           <property name="margin">
+            <number>1</number>
+           </property>
+           <property name="indent">
+            <number>4</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_96">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Number of Images</string>
+           </property>
+           <property name="margin">
+            <number>1</number>
+           </property>
+           <property name="indent">
+            <number>4</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="line_numOfImages">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLineEdit" name="line_minOccurences">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="line_maxOccurences">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="label_110">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Max. Occurences of a Class per Image</string>
+           </property>
+           <property name="margin">
+            <number>1</number>
+           </property>
+           <property name="indent">
+            <number>4</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="line_totalOccurences">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_111">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Total Occurences of a Class in all Images</string>
+           </property>
+           <property name="margin">
+            <number>1</number>
+           </property>
+           <property name="indent">
+            <number>4</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_Regenerate">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Regenerate
+Failed Images</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_generate">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Generate</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>5</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_progress">
+       <item>
+        <widget class="QLabel" name="lbl_progress">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBar">
+         <property name="value">
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1084</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>line_obj_dir</tabstop>
+  <tabstop>pB_search_obj_dir</tabstop>
+  <tabstop>line_gnd_dir</tabstop>
+  <tabstop>pB_search_gnd_dir</tabstop>
+  <tabstop>line_config_file</tabstop>
+  <tabstop>pB_search_config_file</tabstop>
+  <tabstop>line_output_dir</tabstop>
+  <tabstop>pB_search_output_dir</tabstop>
+  <tabstop>comboBox_unit</tabstop>
+  <tabstop>line_gravity</tabstop>
+  <tabstop>cBox_backgroundBlack</tabstop>
+  <tabstop>line_3DviewClipStart</tabstop>
+  <tabstop>line_3DviewClipEnd</tabstop>
+  <tabstop>line_engine</tabstop>
+  <tabstop>cBox_ambientOcclusion</tabstop>
+  <tabstop>sBox_imageCompression</tabstop>
+  <tabstop>sBox_CPUCoresNum</tabstop>
+  <tabstop>sBox_numOfSubdivision</tabstop>
+  <tabstop>comboBox_denoiser</tabstop>
+  <tabstop>sBox_noiseTreshold</tabstop>
+  <tabstop>cBox_useOnlyCPU</tabstop>
+  <tabstop>comboBox_GPUType</tabstop>
+  <tabstop>cBox_saveCocoAnnotatedImage</tabstop>
+  <tabstop>line_obj_linearDamping</tabstop>
+  <tabstop>line_obj_friction</tabstop>
+  <tabstop>cBox_obj_randomColor</tabstop>
+  <tabstop>cBox_obj_keppLoadedMaterial</tabstop>
+  <tabstop>line_obj_definedMaterial</tabstop>
+  <tabstop>cBox_obj_randomMaterial</tabstop>
+  <tabstop>line_obj_samplingRegion</tabstop>
+  <tabstop>sBox_distractor_num</tabstop>
+  <tabstop>line_distractor_definedSize</tabstop>
+  <tabstop>cBox_distractor_adjustSize</tabstop>
+  <tabstop>line_distractor_samplingRegion</tabstop>
+  <tabstop>cBox_gnd_randomPick</tabstop>
+  <tabstop>line_gnd_linearDamping</tabstop>
+  <tabstop>line_gnd_friction</tabstop>
+  <tabstop>line_cam_imageWidth</tabstop>
+  <tabstop>line_cam_imageHeight</tabstop>
+  <tabstop>line_cam_clipStart</tabstop>
+  <tabstop>line_cam_clipEnd</tabstop>
+  <tabstop>line_cam_definedPos</tabstop>
+  <tabstop>cBox_cam_randomPos</tabstop>
+  <tabstop>line_cam_center</tabstop>
+  <tabstop>line_cam_minRadius</tabstop>
+  <tabstop>line_cam_maxRadius</tabstop>
+  <tabstop>cBox_cam_preferSmallRadius</tabstop>
+  <tabstop>line_cam_minElevation</tabstop>
+  <tabstop>line_cam_maxElevation</tabstop>
+  <tabstop>cBox_cam_randomRotation</tabstop>
+  <tabstop>cBox_cam_noWorldBackground</tabstop>
+  <tabstop>cBox_cam_allObjectsFullyVisible</tabstop>
+  <tabstop>cBox_ceilLight_ENA</tabstop>
+  <tabstop>line_ceilLight_definedPos</tabstop>
+  <tabstop>cBox_ceilLight_randomPos</tabstop>
+  <tabstop>line_ceilLight_minHeight</tabstop>
+  <tabstop>line_ceilLight_maxHeight</tabstop>
+  <tabstop>line_ceilLight_definedIntensity</tabstop>
+  <tabstop>cBox_ceilLight_randomIntensity</tabstop>
+  <tabstop>line_ceilLight_minIntensity</tabstop>
+  <tabstop>line_ceilLight_maxIntensity</tabstop>
+  <tabstop>line_ceilLight_XY</tabstop>
+  <tabstop>cBox_ceilLight_fitToGround</tabstop>
+  <tabstop>sBox_spotLight_num</tabstop>
+  <tabstop>line_spotLight_spreadAngle</tabstop>
+  <tabstop>line_spotLight_blend</tabstop>
+  <tabstop>line_spotLight_definedPos</tabstop>
+  <tabstop>cBox_spotLight_randomPos</tabstop>
+  <tabstop>line_spotLight_center</tabstop>
+  <tabstop>line_spotLight_minRadius</tabstop>
+  <tabstop>line_spotLight_maxRadius</tabstop>
+  <tabstop>line_spotLight_minElevation</tabstop>
+  <tabstop>line_spotLight_maxElevation</tabstop>
+  <tabstop>cBox_spotlight_toObjects</tabstop>
+  <tabstop>line_spotLight_definedWatt</tabstop>
+  <tabstop>cBox_spotLight_randomWatt</tabstop>
+  <tabstop>line_spotLight_minWatt</tabstop>
+  <tabstop>line_spotLight_maxWatt</tabstop>
+  <tabstop>line_simu_checkObjectInterval</tabstop>
+  <tabstop>line_simu_substepsPerFrame</tabstop>
+  <tabstop>line_simu_solverIters</tabstop>
+  <tabstop>line_simu_minTime</tabstop>
+  <tabstop>line_simu_maxTime</tabstop>
+  <tabstop>cBox_simu_adjustToObjects</tabstop>
+  <tabstop>pB_loadConfig</tabstop>
+  <tabstop>pB_saveConfig</tabstop>
+  <tabstop>pB_applyConfig</tabstop>
+  <tabstop>line_numOfImages</tabstop>
+  <tabstop>line_totalOccurences</tabstop>
+  <tabstop>line_minOccurences</tabstop>
+  <tabstop>line_maxOccurences</tabstop>
+  <tabstop>pB_Regenerate</tabstop>
+  <tabstop>pB_generate</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,46 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "blenderproc run script",
+        "type": "shell",
+        "command": "blenderproc run DataGenerator/main.py",
+        "windows": {
+          "command": "blenderproc run DataGenerator/main.py"
+        },
+        "group": "test",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        }
+      },
+      {
+        "label": "blenderproc debug script",
+        "type": "shell",
+        "command": "blenderproc debug DataGenerator/main.py",
+        "windows": {
+          "command": "blenderproc debug DataGenerator/main.py"
+        },
+        "group": "test",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        }
+      },
+      {
+        "label": "SleepDelay",
+        "type": "shell",
+        "command": "sleep 3",
+        "windows": {
+          "command": "ping 127.0.0.1 -n 3 > $null"
+        },
+        "group": "test",
+        "presentation": {
+          "reveal": "silent",
+          "panel": "shared"
+        }
+      }
+    ]
+  }

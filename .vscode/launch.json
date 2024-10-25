@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debuggy Attach",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            },
+            "preLaunchTask": "SleepDelay",
+            "justMyCode": false
+        },
+        {
+            "name": "BProc Run Script",
+            "type": "python",
+            "request": "launch",
+            "preLaunchTask": "blenderproc run script",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+        // {
+        //     "name": "BProc Debug Script",
+        //     "type": "python",
+        //     "request": "launch",
+        //     "preLaunchTask": "blenderproc debug script"
+        // }
+    ],
+    "compounds": [
+        {
+            "name": "BProc Run & Attach",
+            "configurations": ["BProc Run Script", "Debuggy Attach"]
+        }
+    ]
+}

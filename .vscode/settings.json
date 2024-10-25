@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./blender-3.3.1-linux-x64/blender-3.3.1-linux-x64/custom-python-packages/Python310/site-packages",
+        "./blender-3.3.1-linux-x64/blender-3.3.1-linux-x64/3.3/scripts/modules",
+    ]
+}
+    
